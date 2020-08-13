@@ -1,0 +1,368 @@
+
+
+/*------   Google Fonts    -----*/
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,600');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600');
+
+/*     Default Page Layout - Start    */
+:root{
+    font-size: 15px;
+
+    /* color-schemes  */ 
+    --primary-color: #333333;
+    --secondary-color: #ffffff;
+    --highlight-color: #2A4A64;
+
+    /* font  */ 
+    --text-font: 'Roboto', normal;
+    --title-font: 'Montserrat', normal;
+}
+
+html, 
+body{
+    width: 100%;
+}
+
+
+section{
+    padding: 1rem 0;
+}
+
+h1,
+h2{
+    font-family: var(--title-font);
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+
+h2{
+    font-size: 1.3rem;
+}
+
+ul{
+    padding: 0;
+    padding-left: 1rem;
+}
+
+li,
+p{
+    margin: 0;
+    padding: 0.1rem 0;
+    text-transform: none;
+    line-height: 1.4rem;
+    font-size: 1.1rem;
+    font-family: var(--text-font);
+}
+
+a{
+    text-decoration: none !important;
+    outline: none !important;
+    color: inherit !important;
+}
+
+.main-grid{
+    display: grid;
+    grid-template-columns: 25rem 1fr;
+    padding: 1rem 10rem;                /*screen*/
+}
+
+.Col-2{
+    display: grid;
+    grid-template-columns: 1fr 4fr; /* to make sure that image always stays the same*/
+    grid-gap: 0.5rem;
+    padding: 0.1rem 0;
+}
+
+.Box{
+    padding: 1.5rem 0;
+}
+
+.Row{
+    padding: 0.5rem 0;
+}
+
+.title{
+    text-transform: uppercase;
+}
+
+.centered{
+    text-align: center;
+    align-self: center;
+}
+
+.centered i{
+    padding: 0.5rem 1rem 0 1rem;
+    font-size: 1.5rem;
+}
+
+
+/*.dark{
+    --secondary-color: #333333;
+    --primary-color: #ffffff;
+    --highlight-color: #2A4A64;
+}
+
+.light{ 
+    --primary-color: #333333;
+    --secondary-color: #ffffff;
+    --highlight-color: #2A4A64;
+} */
+
+/*     Default Page Layout - End    */
+
+
+/*     L - Default - Start    */
+.Col-left{
+    background-color: var(--highlight-color);
+    color: var(--secondary-color); 
+    padding: 1.5rem;
+}
+
+i{
+    color: var(--secondary-color);
+    font-size: 1.2rem;
+    align-self: center;
+}
+
+/*look for better solution*/
+.label{
+    min-width: 6.5rem;
+}
+
+/*     L - Default - End    */
+
+
+/*     R - Default - Start    */
+.Col-right{
+    color: #000000;
+    padding: 1rem;
+    margin-left: 0.5rem;
+}
+
+.Col-3{
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr; /* to make sure that image always stays the same*/
+    grid-gap: 0.5rem;
+    padding: 0.1rem 0;
+}
+
+.description{
+    grid-column: span 2;
+}
+/*     R - Default - End    */
+
+
+/*    Section Specific - Start    */
+
+.round-img{
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    width: 10rem;
+    height: 10rem;
+    background-image: url("./img/profilbild.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto 1rem auto;
+}
+
+.padding-top{
+    padding-top: 1.5rem;
+}
+
+progress[value] {
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    
+    /* Get rid of default border in Firefox. */
+    border: none;
+
+    /* For IE10 */
+    color: #ffffff;
+    
+    /* these two don't work if put in the below classes - why??*/
+    height: 0.5em;
+    align-self: center;
+}
+
+progress[value]::-webkit-progress-bar {
+    /* style rules */
+    border-radius: 0.5em;
+    Box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+}
+
+progress[value]::-webkit-progress-value {
+    /* style rules */
+    background-color: #ffffff;
+    border-radius: 0.5em;
+}
+
+
+.sub-skill p {
+    padding-bottom: 1rem;
+    padding-top: 1.5rem;
+}
+
+.sub-skill div {
+    display: inline-block;
+    border: white 2px solid;
+    padding: 0.5rem 0.8rem;
+    margin: 0.5rem;
+    text-transform: uppercase;
+}
+
+.Col-left ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#closingLine {
+    display: flex;
+    padding-top: 3rem;
+    justify-content: space-between;
+}   
+
+#closingLine img{
+    width: 20%;
+}   
+
+#portfolio {
+    padding: 3rem 10rem;   
+}
+
+#portfolio .card:not(:last-child){
+   margin-right: 8rem;
+}
+
+#portfolio .card-img-top{
+    height: 15rem;
+}
+
+#portfolio .overlay{
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("./img/Senioren App.JPG") center no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+#portfolio .card-footer{
+    margin-top: auto;
+}
+
+#portfolio i{
+    color: black;
+}
+
+/*     Section Specific - End    */
+
+/*     Media Queries - Start    */
+
+/* Medium Layout: 1280px. */
+@media only screen and (min-width: 992px) and (max-width: 1600px) {
+    .main-grid{
+        padding: 0;
+    }
+
+    #portfolio {
+        padding: 3rem 1.5rem;   
+    }
+    
+    #portfolio .card:not(:last-child){
+        margin-right: 3rem;
+    }
+
+
+
+
+}
+
+/* Tablet Layout: 768px. */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+    /*     Default Page Layout - Start    */
+    h1{
+        font-size: 1.5rem;
+    }
+
+    h2{
+        font-size: 1rem;
+    }
+
+    li,
+    p{
+        line-height: 1rem;
+        font-size: 0.7rem;
+    }
+
+    .main-grid{
+        grid-template-columns: 20rem 1fr;
+        padding: 0;
+    }
+
+    .Box{
+        padding: 1rem 0;
+    }
+    
+    .Row{
+        padding: 0.2rem 0;
+    }
+
+    .not-displayed{
+        display: none;
+    }
+
+    /*     Default Page Layout - End    */
+
+    /*     L - Default - Start    */
+    .Col-left{
+        padding: 1rem;
+    }
+
+    /*look for better solution*/
+    .label{
+        min-width: 4rem;
+    }
+    /*     L - Default - End    */
+
+
+    /*    Section Specific - Start    */
+    .round-img{
+        width: 5rem;
+        height: 5rem;
+    }
+    /*    Section Specific - End    */
+    #portfolio {
+        padding: 3rem 1.5rem;   
+    }
+    
+    #portfolio .card:not(:last-child){
+        margin-right: 1rem;
+    }
+
+}
+
+
+/* Mobile Layout: 320px. */
+@media only screen and (max-width: 767px) {
+    
+
+
+    .not-displayed{
+        display: none;
+    }
+  
+} 
+
+
+/*     Media Queries - End    */
