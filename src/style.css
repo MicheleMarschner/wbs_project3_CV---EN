@@ -238,8 +238,20 @@ progress[value]::-webkit-progress-value {
     padding: 3rem 10rem;   
 }
 
+#portfolio .card p{
+    padding-bottom: 0.5rem;   
+}
+
 #portfolio .card:not(:last-child){
    margin-right: 8rem;
+}
+
+#portfolio .card-title {
+   color: white;  
+   background-color: black; 
+   display: inline;
+   padding: 0.5rem;
+   margin: 1rem 0.2rem;
 }
 
 #portfolio .card-img-top{
